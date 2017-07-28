@@ -113,3 +113,24 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+/**
+ * Todo Styling.
+ */
+
+.todos h1 {
+  margin-bottom: 20px;
+}
+
+.todos-list .todo-item {
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.todos-list .todo-item h3 {
+  margin-top: 5px;
+}
