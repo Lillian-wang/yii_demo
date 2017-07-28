@@ -7,8 +7,14 @@ use app\models\Todo;
 use Yii;
 
 
+/**
+ * Interactions around the todo functionality.
+ */
 class TodoController extends Controller
 {
+    /**
+     * Landing page for viewing todos.
+     */
     public function actionIndex()
     {
 
@@ -19,6 +25,11 @@ class TodoController extends Controller
         ]);
     }
 
+
+    /**
+     * Create or update a todo. Supports both AJAX as well as traditional 
+     * form submits for graceful degration.
+     */
     public function actionUpdate()
     {
       $request = Yii::$app->request;

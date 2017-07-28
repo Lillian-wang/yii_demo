@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  /**
+   * Functionality for creating new todos.
+   */
   var todoForm = $('.todo-form');
   todoForm.on('submit',function(e){
     e.preventDefault();
